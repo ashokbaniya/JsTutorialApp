@@ -1,525 +1,525 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.thejavascriptbook.com/</loc>
+    <loc>https://www.javascriptlearning.com/</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/about</loc>
+    <loc>https://www.javascriptlearning.com/about</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/the-language</loc>
+    <loc>https://www.javascriptlearning.com/javascript/the-language</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/what-is-javascript</loc>
+    <loc>https://www.javascriptlearning.com/javascript/what-is-javascript</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/how-javascript-runs</loc>
+    <loc>https://www.javascriptlearning.com/javascript/how-javascript-runs</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/javascript-engines</loc>
+    <loc>https://www.javascriptlearning.com/javascript/javascript-engines</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/first-javascript</loc>
+    <loc>https://www.javascriptlearning.com/javascript/first-javascript</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/statements</loc>
+    <loc>https://www.javascriptlearning.com/javascript/statements</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/expressions</loc>
+    <loc>https://www.javascriptlearning.com/javascript/expressions</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/comments</loc>
+    <loc>https://www.javascriptlearning.com/javascript/comments</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/variables-values</loc>
+    <loc>https://www.javascriptlearning.com/javascript/variables-values</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/variables</loc>
+    <loc>https://www.javascriptlearning.com/javascript/variables</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/let</loc>
+    <loc>https://www.javascriptlearning.com/javascript/let</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/const</loc>
+    <loc>https://www.javascriptlearning.com/javascript/const</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/var</loc>
+    <loc>https://www.javascriptlearning.com/javascript/var</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/values</loc>
+    <loc>https://www.javascriptlearning.com/javascript/values</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/primitive-values</loc>
+    <loc>https://www.javascriptlearning.com/javascript/primitive-values</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/data-types</loc>
+    <loc>https://www.javascriptlearning.com/javascript/data-types</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/data-types-overview</loc>
+    <loc>https://www.javascriptlearning.com/javascript/data-types-overview</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/strings</loc>
+    <loc>https://www.javascriptlearning.com/javascript/strings</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/numbers</loc>
+    <loc>https://www.javascriptlearning.com/javascript/numbers</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/bigint</loc>
+    <loc>https://www.javascriptlearning.com/javascript/bigint</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/boolean</loc>
+    <loc>https://www.javascriptlearning.com/javascript/boolean</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/undefined</loc>
+    <loc>https://www.javascriptlearning.com/javascript/undefined</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/null</loc>
+    <loc>https://www.javascriptlearning.com/javascript/null</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/symbol</loc>
+    <loc>https://www.javascriptlearning.com/javascript/symbol</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/operators</loc>
+    <loc>https://www.javascriptlearning.com/javascript/operators</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/arithmetic-operators</loc>
+    <loc>https://www.javascriptlearning.com/javascript/arithmetic-operators</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/assignment-operators</loc>
+    <loc>https://www.javascriptlearning.com/javascript/assignment-operators</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/comparison-operators</loc>
+    <loc>https://www.javascriptlearning.com/javascript/comparison-operators</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/logical-operators</loc>
+    <loc>https://www.javascriptlearning.com/javascript/logical-operators</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/equality</loc>
+    <loc>https://www.javascriptlearning.com/javascript/equality</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/strict-equality</loc>
+    <loc>https://www.javascriptlearning.com/javascript/strict-equality</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/type-coercion</loc>
+    <loc>https://www.javascriptlearning.com/javascript/type-coercion</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/truthy-falsy</loc>
+    <loc>https://www.javascriptlearning.com/javascript/truthy-falsy</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/nullish-coalescing</loc>
+    <loc>https://www.javascriptlearning.com/javascript/nullish-coalescing</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/optional-chaining</loc>
+    <loc>https://www.javascriptlearning.com/javascript/optional-chaining</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/ternary-operator</loc>
+    <loc>https://www.javascriptlearning.com/javascript/ternary-operator</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/control-flow</loc>
+    <loc>https://www.javascriptlearning.com/javascript/control-flow</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/if</loc>
+    <loc>https://www.javascriptlearning.com/javascript/if</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/else</loc>
+    <loc>https://www.javascriptlearning.com/javascript/else</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/else-if</loc>
+    <loc>https://www.javascriptlearning.com/javascript/else-if</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/switch</loc>
+    <loc>https://www.javascriptlearning.com/javascript/switch</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/for</loc>
+    <loc>https://www.javascriptlearning.com/javascript/for</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/while</loc>
+    <loc>https://www.javascriptlearning.com/javascript/while</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/do-while</loc>
+    <loc>https://www.javascriptlearning.com/javascript/do-while</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/break</loc>
+    <loc>https://www.javascriptlearning.com/javascript/break</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/continue</loc>
+    <loc>https://www.javascriptlearning.com/javascript/continue</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/functions</loc>
+    <loc>https://www.javascriptlearning.com/javascript/functions</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/what-is-a-function</loc>
+    <loc>https://www.javascriptlearning.com/javascript/what-is-a-function</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/function-declaration</loc>
+    <loc>https://www.javascriptlearning.com/javascript/function-declaration</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/function-expression</loc>
+    <loc>https://www.javascriptlearning.com/javascript/function-expression</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/calling-functions</loc>
+    <loc>https://www.javascriptlearning.com/javascript/calling-functions</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/parameters</loc>
+    <loc>https://www.javascriptlearning.com/javascript/parameters</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/arguments</loc>
+    <loc>https://www.javascriptlearning.com/javascript/arguments</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/return-values</loc>
+    <loc>https://www.javascriptlearning.com/javascript/return-values</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/default-parameters</loc>
+    <loc>https://www.javascriptlearning.com/javascript/default-parameters</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/rest-parameters</loc>
+    <loc>https://www.javascriptlearning.com/javascript/rest-parameters</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/arrow-functions</loc>
+    <loc>https://www.javascriptlearning.com/javascript/arrow-functions</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/anonymous-functions</loc>
+    <loc>https://www.javascriptlearning.com/javascript/anonymous-functions</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/callback-functions</loc>
+    <loc>https://www.javascriptlearning.com/javascript/callback-functions</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/higher-order-functions</loc>
+    <loc>https://www.javascriptlearning.com/javascript/higher-order-functions</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/pure-functions</loc>
+    <loc>https://www.javascriptlearning.com/javascript/pure-functions</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/recursion</loc>
+    <loc>https://www.javascriptlearning.com/javascript/recursion</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/objects</loc>
+    <loc>https://www.javascriptlearning.com/javascript/objects</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/what-is-an-object</loc>
+    <loc>https://www.javascriptlearning.com/javascript/what-is-an-object</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/properties</loc>
+    <loc>https://www.javascriptlearning.com/javascript/properties</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/methods</loc>
+    <loc>https://www.javascriptlearning.com/javascript/methods</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/object-references</loc>
+    <loc>https://www.javascriptlearning.com/javascript/object-references</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/object-destructuring</loc>
+    <loc>https://www.javascriptlearning.com/javascript/object-destructuring</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/spread-syntax</loc>
+    <loc>https://www.javascriptlearning.com/javascript/spread-syntax</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/arrays</loc>
+    <loc>https://www.javascriptlearning.com/javascript/arrays</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/arrays-overview</loc>
+    <loc>https://www.javascriptlearning.com/javascript/arrays-overview</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/array-indexes</loc>
+    <loc>https://www.javascriptlearning.com/javascript/array-indexes</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/array-methods</loc>
+    <loc>https://www.javascriptlearning.com/javascript/array-methods</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/map</loc>
+    <loc>https://www.javascriptlearning.com/javascript/map</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/filter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/filter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/reduce</loc>
+    <loc>https://www.javascriptlearning.com/javascript/reduce</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/foreach</loc>
+    <loc>https://www.javascriptlearning.com/javascript/foreach</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/array-destructuring</loc>
+    <loc>https://www.javascriptlearning.com/javascript/array-destructuring</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/reference-vs-value</loc>
+    <loc>https://www.javascriptlearning.com/javascript/reference-vs-value</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/scope</loc>
+    <loc>https://www.javascriptlearning.com/javascript/scope</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/what-is-scope</loc>
+    <loc>https://www.javascriptlearning.com/javascript/what-is-scope</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/global-scope</loc>
+    <loc>https://www.javascriptlearning.com/javascript/global-scope</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/function-scope</loc>
+    <loc>https://www.javascriptlearning.com/javascript/function-scope</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/block-scope</loc>
+    <loc>https://www.javascriptlearning.com/javascript/block-scope</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/lexical-scope</loc>
+    <loc>https://www.javascriptlearning.com/javascript/lexical-scope</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/scope-chain</loc>
+    <loc>https://www.javascriptlearning.com/javascript/scope-chain</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/lexical-environment</loc>
+    <loc>https://www.javascriptlearning.com/javascript/lexical-environment</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/hoisting</loc>
+    <loc>https://www.javascriptlearning.com/javascript/hoisting</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/temporal-dead-zone</loc>
+    <loc>https://www.javascriptlearning.com/javascript/temporal-dead-zone</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/closures-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/closures-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/closures</loc>
+    <loc>https://www.javascriptlearning.com/javascript/closures</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/how-closures-remember-variables</loc>
+    <loc>https://www.javascriptlearning.com/javascript/how-closures-remember-variables</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/practical-uses-of-closures</loc>
+    <loc>https://www.javascriptlearning.com/javascript/practical-uses-of-closures</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/javascript-runtime-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/javascript-runtime-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/what-happens-when-js-runs</loc>
+    <loc>https://www.javascriptlearning.com/javascript/what-happens-when-js-runs</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/javascript-runtime</loc>
+    <loc>https://www.javascriptlearning.com/javascript/javascript-runtime</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/javascript-engine</loc>
+    <loc>https://www.javascriptlearning.com/javascript/javascript-engine</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/execution-context-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/execution-context-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/execution-context</loc>
+    <loc>https://www.javascriptlearning.com/javascript/execution-context</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/global-execution-context</loc>
+    <loc>https://www.javascriptlearning.com/javascript/global-execution-context</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/function-execution-context</loc>
+    <loc>https://www.javascriptlearning.com/javascript/function-execution-context</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/creation-phase</loc>
+    <loc>https://www.javascriptlearning.com/javascript/creation-phase</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/execution-phase</loc>
+    <loc>https://www.javascriptlearning.com/javascript/execution-phase</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/call-stack-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/call-stack-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/call-stack</loc>
+    <loc>https://www.javascriptlearning.com/javascript/call-stack</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/stack-overflow</loc>
+    <loc>https://www.javascriptlearning.com/javascript/stack-overflow</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/heap-memory-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/heap-memory-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/heap</loc>
+    <loc>https://www.javascriptlearning.com/javascript/heap</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/memory</loc>
+    <loc>https://www.javascriptlearning.com/javascript/memory</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/garbage-collection</loc>
+    <loc>https://www.javascriptlearning.com/javascript/garbage-collection</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/event-loop-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/event-loop-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/event-loop</loc>
+    <loc>https://www.javascriptlearning.com/javascript/event-loop</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/how-the-event-loop-works</loc>
+    <loc>https://www.javascriptlearning.com/javascript/how-the-event-loop-works</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/async-javascript-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/async-javascript-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/synchronous-javascript</loc>
+    <loc>https://www.javascriptlearning.com/javascript/synchronous-javascript</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/asynchronous-javascript</loc>
+    <loc>https://www.javascriptlearning.com/javascript/asynchronous-javascript</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/blocking-vs-non-blocking</loc>
+    <loc>https://www.javascriptlearning.com/javascript/blocking-vs-non-blocking</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/web-apis</loc>
+    <loc>https://www.javascriptlearning.com/javascript/web-apis</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/callbacks</loc>
+    <loc>https://www.javascriptlearning.com/javascript/callbacks</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/callback-queue</loc>
+    <loc>https://www.javascriptlearning.com/javascript/callback-queue</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/microtask-queue</loc>
+    <loc>https://www.javascriptlearning.com/javascript/microtask-queue</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/macrotask-queue</loc>
+    <loc>https://www.javascriptlearning.com/javascript/macrotask-queue</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/promises-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/promises-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/promises</loc>
+    <loc>https://www.javascriptlearning.com/javascript/promises</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/promise-states</loc>
+    <loc>https://www.javascriptlearning.com/javascript/promise-states</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/promise-chaining</loc>
+    <loc>https://www.javascriptlearning.com/javascript/promise-chaining</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/async-await-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/async-await-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/async</loc>
+    <loc>https://www.javascriptlearning.com/javascript/async</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/await</loc>
+    <loc>https://www.javascriptlearning.com/javascript/await</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/prototypes-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/prototypes-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/prototype</loc>
+    <loc>https://www.javascriptlearning.com/javascript/prototype</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/prototype-chain</loc>
+    <loc>https://www.javascriptlearning.com/javascript/prototype-chain</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/inheritance</loc>
+    <loc>https://www.javascriptlearning.com/javascript/inheritance</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/constructor-functions</loc>
+    <loc>https://www.javascriptlearning.com/javascript/constructor-functions</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/classes-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/classes-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/classes</loc>
+    <loc>https://www.javascriptlearning.com/javascript/classes</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/class-methods</loc>
+    <loc>https://www.javascriptlearning.com/javascript/class-methods</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/extends</loc>
+    <loc>https://www.javascriptlearning.com/javascript/extends</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/super</loc>
+    <loc>https://www.javascriptlearning.com/javascript/super</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/private-fields</loc>
+    <loc>https://www.javascriptlearning.com/javascript/private-fields</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/this-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/this-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/this</loc>
+    <loc>https://www.javascriptlearning.com/javascript/this</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/this-global-context</loc>
+    <loc>https://www.javascriptlearning.com/javascript/this-global-context</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/this-object-method</loc>
+    <loc>https://www.javascriptlearning.com/javascript/this-object-method</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/this-constructor</loc>
+    <loc>https://www.javascriptlearning.com/javascript/this-constructor</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/explicit-binding</loc>
+    <loc>https://www.javascriptlearning.com/javascript/explicit-binding</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/call</loc>
+    <loc>https://www.javascriptlearning.com/javascript/call</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/apply</loc>
+    <loc>https://www.javascriptlearning.com/javascript/apply</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/bind</loc>
+    <loc>https://www.javascriptlearning.com/javascript/bind</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/arrow-functions-and-this</loc>
+    <loc>https://www.javascriptlearning.com/javascript/arrow-functions-and-this</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/modules-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/modules-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/modules</loc>
+    <loc>https://www.javascriptlearning.com/javascript/modules</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/import</loc>
+    <loc>https://www.javascriptlearning.com/javascript/import</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/export</loc>
+    <loc>https://www.javascriptlearning.com/javascript/export</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/es-modules</loc>
+    <loc>https://www.javascriptlearning.com/javascript/es-modules</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/commonjs</loc>
+    <loc>https://www.javascriptlearning.com/javascript/commonjs</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/error-handling-chapter</loc>
+    <loc>https://www.javascriptlearning.com/javascript/error-handling-chapter</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/strict-mode</loc>
+    <loc>https://www.javascriptlearning.com/javascript/strict-mode</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/error-handling</loc>
+    <loc>https://www.javascriptlearning.com/javascript/error-handling</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/try</loc>
+    <loc>https://www.javascriptlearning.com/javascript/try</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/catch</loc>
+    <loc>https://www.javascriptlearning.com/javascript/catch</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/finally</loc>
+    <loc>https://www.javascriptlearning.com/javascript/finally</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/custom-errors</loc>
+    <loc>https://www.javascriptlearning.com/javascript/custom-errors</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/advanced-concepts</loc>
+    <loc>https://www.javascriptlearning.com/javascript/advanced-concepts</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/iterators</loc>
+    <loc>https://www.javascriptlearning.com/javascript/iterators</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/generators</loc>
+    <loc>https://www.javascriptlearning.com/javascript/generators</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/symbols</loc>
+    <loc>https://www.javascriptlearning.com/javascript/symbols</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/weakmap</loc>
+    <loc>https://www.javascriptlearning.com/javascript/weakmap</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/weakset</loc>
+    <loc>https://www.javascriptlearning.com/javascript/weakset</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/event-delegation</loc>
+    <loc>https://www.javascriptlearning.com/javascript/event-delegation</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/debouncing</loc>
+    <loc>https://www.javascriptlearning.com/javascript/debouncing</loc>
   </url>
   <url>
-    <loc>https://www.thejavascriptbook.com/javascript/throttling</loc>
+    <loc>https://www.javascriptlearning.com/javascript/throttling</loc>
   </url>
 </urlset>

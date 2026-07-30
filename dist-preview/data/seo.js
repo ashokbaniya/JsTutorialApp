@@ -16,8 +16,8 @@ import { CURRICULUM, TOPIC_INDEX } from './curriculum.js';
 import { ARTICLES } from './articles.js';
 
 // -- Update these two before deploying --------------------------
-export const SITE_NAME = 'The JavaScript Book';
-export const SITE_URL = 'https://www.thejavascriptbook.com'; // no trailing slash
+export const SITE_NAME = 'javascriptlearning';
+export const SITE_URL = 'https://javascriptlearning.com/'; // no trailing slash
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og/default.png`;
 export const SITE_DESCRIPTION =
   'A visual, structured guide to JavaScript — from the fundamentals to how the engine, event loop, and memory model actually work underneath.';
