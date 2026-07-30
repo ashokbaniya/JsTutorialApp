@@ -1,0 +1,91 @@
+/* ============================================================
+   CONTACT PAGE — info box + form
+   ============================================================ */
+
+.contact-info-box {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  background: var(--paper);
+  font-size: 0.92rem;
+}
+
+.contact-info-box p {
+  margin: 0.35rem 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 560px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-field label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+}
+
+.form-field input,
+.form-field textarea {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.6rem 0.75rem;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.field-invalid {
+  border-color: #c0392b !important;
+}
+
+.form-error {
+  min-height: 1.1em;
+  font-size: 0.78rem;
+  color: #c0392b;
+  margin: 0;
+}
+
+.contact-submit {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  color: var(--paper);
+  background: var(--blue);
+  border: none;
+  border-radius: 4px;
+  padding: 0.65rem 1.5rem;
+  cursor: pointer;
+}
+
+.contact-submit:hover {
+  opacity: 0.9;
+}
+
+.form-status {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  margin: 0;
+}

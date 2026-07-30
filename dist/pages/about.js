@@ -12,7 +12,7 @@ export function renderAbout() {
       <section class="article-section">
         <h2><span class="section-num">02</span> How to use it</h2>
         <p>Start from the beginning if you're new to the language, or search for the exact concept you're stuck on. Every article links to the ideas it depends on, so you can always step backward to fill in a gap.</p>
-        <p><a href="#/">&larr; Back to the table of contents</a></p>
+        <p><a href="/">&larr; Back to the table of contents</a></p>
       </section>
     </div>
   `;

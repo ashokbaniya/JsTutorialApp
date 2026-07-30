@@ -3,8 +3,9 @@
 //
 // Runs in Node (no browser, no bundler). It re-uses the exact same
 // render functions the app already ships (renderHeader, renderSidebar,
-// renderLessonLayout, renderPageToc) — those are pure functions that
-// build an HTML string, so they work unchanged outside the browser.
+// renderLessonLayout, renderPageToc, renderFooter) — those are pure
+// functions that build an HTML string, so they work unchanged outside
+// the browser.
 //
 // For every route it writes a real file, e.g.:
 //   /javascript/closures  ->  dist/javascript/closures/index.html
@@ -23,9 +24,10 @@ import { mkdir, writeFile, cp, access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
-import { renderHeader, renderSidebar, renderLessonLayout, renderPageToc, renderChapterPage } from '../components.js';
+import { renderHeader, renderSidebar, renderLessonLayout, renderPageToc, renderChapterPage, renderFooter } from '../components.js';
 import { ARTICLES } from '../data/articles.js';
 import { getAllRoutes, SITE_URL, SITE_NAME } from '../data/seo.js';
+import { renderPrivacy } from '../pages/privacy.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -90,6 +92,7 @@ function documentShell({ metadata, bodyContent, showToc, pageTocHtml }) {
   <link rel="stylesheet" href="/css/layout.css">
   <link rel="stylesheet" href="/css/article.css">
   <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
   <div id="app">
@@ -99,6 +102,7 @@ function documentShell({ metadata, bodyContent, showToc, pageTocHtml }) {
       <main class="content-col">${bodyContent}</main>
       ${showToc ? pageTocHtml : ''}
     </div>
+    ${renderFooter()}
   </div>
   <script type="module" src="/app.js"></script>
 </body>
@@ -160,6 +164,8 @@ async function main() {
       bodyContent = renderHome();
     } else if (route.path === '/about') {
       bodyContent = renderAbout();
+    } else if (route.path === '/privacy') {
+      bodyContent = renderPrivacy();
     } else if (route.chapter) {
       bodyContent = renderChapterPage(route.chapter);
     } else if (route.slug) {
@@ -183,7 +189,16 @@ async function main() {
   }
 
   // Copy static assets straight through if present (styles, app scripts, data).
-  for (const asset of ['app.js', 'router.js', 'components.js', 'search.js', 'data', 'css', 'pages']) {
+  for (const asset of [
+  'app.js',
+  'router.js',
+  'components.js',
+  'search.js',
+  'data',
+  'css',
+  'pages',
+  'google2b9491e256730bcc.html'
+]) {
     const src = path.join(ROOT, asset);
     if (await fileExists(src)) {
       await cp(src, path.join(DIST, asset), { recursive: true });

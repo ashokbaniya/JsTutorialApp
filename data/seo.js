@@ -140,6 +140,20 @@ export function generateBreadcrumbSchema(topic) {
   };
 }
 
+// Minimal two-level breadcrumb ("Home -> Page") for flat, non-curriculum
+// pages like /privacy and /contact, which don't belong to a chapter and
+// so can't use generateBreadcrumbSchema(topic) above.
+function simpleBreadcrumbSchema(pageName, canonical) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: pageName, item: canonical },
+    ],
+  };
+}
+
 /**
  * TechArticle structured data for a written article. Only emitted for
  * pages that have real content — never for stub pages, since that would
@@ -220,11 +234,31 @@ export function generateAboutMetadata() {
   };
 }
 
+/**
+ * Privacy Policy metadata. Written to be AdSense-review-friendly:
+ * indexable, has a real canonical URL, and isn't marked noindex the
+ * way unwritten lesson stubs are.
+ */
+export function generatePrivacyMetadata() {
+  const canonical = `${SITE_URL}/privacy`;
+  const title = `Privacy Policy — ${SITE_NAME}`;
+  const description = `Privacy Policy for ${SITE_NAME}: what information we collect, how cookies, Google Analytics, and advertising work on this site, and how to contact us.`;
+  return {
+    title,
+    description,
+    canonical,
+    robots: 'index, follow',
+    og: { title, description, url: canonical, type: 'website', image: DEFAULT_OG_IMAGE },
+    breadcrumbSchema: simpleBreadcrumbSchema('Privacy Policy', canonical),
+  };
+}
+
 /** Every URL that should exist, with its metadata — used by the build script and the sitemap generator. */
 export function getAllRoutes() {
   const routes = [
     { path: '/', metadata: generateHomeMetadata() },
     { path: '/about', metadata: generateAboutMetadata() },
+    { path: '/privacy', metadata: generatePrivacyMetadata() },
   ];
   CURRICULUM.forEach((chapter) => {
     routes.push({ path: `/javascript/${chapter.slug}`, chapter, metadata: generateChapterMetadata(chapter) });

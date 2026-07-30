@@ -3,7 +3,7 @@ import { CURRICULUM } from '../data/curriculum.js';
 export function renderHome() {
   const parts = CURRICULUM.map((chapter) => `
     <li class="home-part">
-      <a class="home-part-link" href="#/javascript/${chapter.topics[0].slug}">
+      <a class="home-part-link" href="/javascript/${chapter.topics[0].slug}">
         <span class="home-part-num">${chapter.num}</span>
         <span class="home-part-title">${chapter.title}</span>
         <span class="home-part-count">${chapter.topics.length} topics</span>
@@ -19,7 +19,7 @@ export function renderHome() {
         <p class="home-subtitle">A visual guide to JavaScript concepts, execution, memory, scope, and the runtime.</p>
         <p class="home-desc">Read a clear explanation, see a worked example, then watch it happen in a diagram — the same three steps, chapter after chapter.</p>
         <div class="home-actions">
-          <a class="btn-primary" href="#/javascript/what-is-javascript">Start Reading</a>
+          <a class="btn-primary" href="/javascript/what-is-javascript">Start Reading</a>
           <a class="link-secondary" href="#contents-list">Browse Contents</a>
         </div>
       </div>

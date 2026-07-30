@@ -78,11 +78,14 @@ export function bindSidebarEvents() {
   });
   backdrop?.addEventListener('click', closeSidebar);
   sidebar?.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeSidebar));
+
+  // The sidebar is fully rebuilt (innerHTML replaced) on every navigation,
+  // which used to leave it scrolled back to the top of the chapter list —
+  // losing your place every time you clicked a lesson. Instead, scroll the
+  // currently active lesson into view so the sidebar stays where you are.
+  sidebar?.querySelector('.toc-topics a.active')?.scrollIntoView({ block: 'nearest' });
 }
 
-// ---------------------------------------------------------------
-// "On this page" right-hand nav
-// ---------------------------------------------------------------
 // ---------------------------------------------------------------
 // "On this page" right-hand nav
 // ---------------------------------------------------------------
@@ -90,9 +93,9 @@ export function renderPageToc(sections = []) {
   const items = (sections || [])
     .map((s, i) => `<li><a href="#section-${i}">${s.heading}</a></li>`)
     .join('');
-  
+
   if (!items) return ''; // Don't render TOC sidebar if there are no sections
-  
+
   return `
     <aside class="page-toc" aria-label="On this page">
       <p class="page-toc-label">ON THIS PAGE</p>
@@ -187,9 +190,6 @@ export function renderPrevNext(slug) {
 }
 
 // ---------------------------------------------------------------
-// Full lesson layout — composes an article page
-// ---------------------------------------------------------------
-// ---------------------------------------------------------------
 // Full lesson layout — composes an article page (Supports both schemas)
 // ---------------------------------------------------------------
 export function renderLessonLayout(slug) {
@@ -200,7 +200,7 @@ export function renderLessonLayout(slug) {
     return renderStubLesson(slug, topicMeta);
   }
 
-  // Normalize properties between old schema (intro, takeaway, related) 
+  // Normalize properties between old schema (intro, takeaway, related)
   // and new schema (concept, keyTakeaway, relatedTopics)
   const intro = article.intro || article.concept || '';
   const takeaway = article.takeaway || article.keyTakeaway || '';
@@ -210,7 +210,7 @@ export function renderLessonLayout(slug) {
   let sections = article.sections;
   if (!sections) {
     sections = [];
-    
+
     if (article.howItWorks) {
       sections.push({
         heading: 'How It Works',
@@ -220,7 +220,7 @@ export function renderLessonLayout(slug) {
         steps: article.stepByStep || null
       });
     }
-    
+
     if (article.practicalCode) {
       sections.push({
         heading: 'Practical Example',
@@ -333,5 +333,26 @@ export function renderChapterPage(chapter) {
       </section>
       <nav class="prev-next-nav" aria-label="Chapter navigation">${prevHtml}${nextHtml}</nav>
     </div>
+  `;
+}
+
+// ---------------------------------------------------------------
+// Footer — appears on every page (browser render + prerendered build).
+// Kept as a plain, dependency-free component like renderHeader so it
+// can be called identically from app.js and build/generate.js.
+// ---------------------------------------------------------------
+export function renderFooter() {
+  const year = new Date().getFullYear();
+  return `
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/privacy">Privacy Policy</a>
+        </nav>
+        <p class="footer-copyright">&copy; ${year} The JavaScript Book. All rights reserved.</p>
+      </div>
+    </footer>
   `;
 }
