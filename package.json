@@ -1,0 +1,12 @@
+{
+  "name": "the-javascript-book",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build/generate.js",
+    "start": "npx serve dist"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

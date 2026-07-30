@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The for Loop in JavaScript | The JavaScript Book</title>
+  <meta name="description" content="The for loop repeats a block a set number of times, packing the counter's setup, condition, and update into one line so the whole loop's behavior is visible…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.thejavascriptbook.com/javascript/for">
+  
+    <meta property="og:title" content="The for Loop in JavaScript | The JavaScript Book">
+    <meta property="og:description" content="The for loop repeats a block a set number of times, packing the counter's setup, condition, and update into one line so the whole loop's behavior is visible…">
+    <meta property="og:url" content="https://www.thejavascriptbook.com/javascript/for">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://www.thejavascriptbook.com/og/default.png">
+    <meta property="og:site_name" content="The JavaScript Book">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The for Loop in JavaScript | The JavaScript Book">
+    <meta name="twitter:description" content="The for loop repeats a block a set number of times, packing the counter's setup, condition, and update into one line so the whole loop's behavior is visible…">
+    <meta name="twitter:image" content="https://www.thejavascriptbook.com/og/default.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.thejavascriptbook.com/"},{"@type":"ListItem","position":2,"name":"JavaScript","item":"https://www.thejavascriptbook.com/javascript"},{"@type":"ListItem","position":3,"name":"Control Flow","item":"https://www.thejavascriptbook.com/javascript/control-flow"},{"@type":"ListItem","position":4,"name":"for","item":"https://www.thejavascriptbook.com/javascript/for"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"The for Loop","description":"The for loop repeats a block a set number of times, packing the counter's setup, condition, and update into one line so the whole loop's behavior is visible…","author":{"@type":"Organization","name":"The JavaScript Book"},"publisher":{"@type":"Organization","name":"The JavaScript Book"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thejavascriptbook.com/javascript/for"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/article.css">
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+  <div id="app">
+    
+    <header class="site-header">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open table of contents">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <a class="brand" href="/">
+        <span class="brand-mark">JS&#9670;</span>
+        <span class="brand-name">The JavaScript Book</span>
+      </a>
+      <div class="header-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="search-input" type="text" placeholder="Search JavaScript concepts..." autocomplete="off" />
+        <div class="search-results hidden" id="search-results"></div>
+      </div>
+      <div class="header-right">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme" title="Theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+        </button>
+        <a href="/about" class="header-about-label">About</a>
+      </div>
+    </header>
+    <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+  
+    <div class="book-layout ">
+      
+    <nav class="sidebar" id="sidebar" aria-label="Table of contents">
+      <p class="sidebar-title">CONTENTS</p>
+      
+      <div class="toc-chapter " data-chapter="the-language">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">I.</span>The Language</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/what-is-javascript" class="" data-slug="what-is-javascript">What is JavaScript?</a></li><li><a href="/javascript/how-javascript-runs" class="" data-slug="how-javascript-runs">How JavaScript Runs</a></li><li><a href="/javascript/javascript-engines" class="" data-slug="javascript-engines">JavaScript Engines</a></li><li><a href="/javascript/first-javascript" class="" data-slug="first-javascript">Writing Your First JavaScript</a></li><li><a href="/javascript/statements" class="" data-slug="statements">Statements</a></li><li><a href="/javascript/expressions" class="" data-slug="expressions">Expressions</a></li><li><a href="/javascript/comments" class="" data-slug="comments">Comments</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="variables-values">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">II.</span>Variables & Values</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/variables" class="" data-slug="variables">Variables</a></li><li><a href="/javascript/let" class="" data-slug="let">let</a></li><li><a href="/javascript/const" class="" data-slug="const">const</a></li><li><a href="/javascript/var" class="" data-slug="var">var</a></li><li><a href="/javascript/values" class="" data-slug="values">Values</a></li><li><a href="/javascript/primitive-values" class="" data-slug="primitive-values">Primitive Values</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="data-types">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">III.</span>Data Types</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/data-types-overview" class="" data-slug="data-types-overview">Data Types</a></li><li><a href="/javascript/strings" class="" data-slug="strings">Strings</a></li><li><a href="/javascript/numbers" class="" data-slug="numbers">Numbers</a></li><li><a href="/javascript/bigint" class="" data-slug="bigint">BigInt</a></li><li><a href="/javascript/boolean" class="" data-slug="boolean">Boolean</a></li><li><a href="/javascript/undefined" class="" data-slug="undefined">Undefined</a></li><li><a href="/javascript/null" class="" data-slug="null">Null</a></li><li><a href="/javascript/symbol" class="" data-slug="symbol">Symbol</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="operators">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">IV.</span>Operators & Expressions</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/arithmetic-operators" class="" data-slug="arithmetic-operators">Arithmetic Operators</a></li><li><a href="/javascript/assignment-operators" class="" data-slug="assignment-operators">Assignment Operators</a></li><li><a href="/javascript/comparison-operators" class="" data-slug="comparison-operators">Comparison Operators</a></li><li><a href="/javascript/logical-operators" class="" data-slug="logical-operators">Logical Operators</a></li><li><a href="/javascript/equality" class="" data-slug="equality">Equality</a></li><li><a href="/javascript/strict-equality" class="" data-slug="strict-equality">Strict Equality</a></li><li><a href="/javascript/type-coercion" class="" data-slug="type-coercion">Type Coercion</a></li><li><a href="/javascript/truthy-falsy" class="" data-slug="truthy-falsy">Truthy and Falsy Values</a></li><li><a href="/javascript/nullish-coalescing" class="" data-slug="nullish-coalescing">Nullish Coalescing</a></li><li><a href="/javascript/optional-chaining" class="" data-slug="optional-chaining">Optional Chaining</a></li><li><a href="/javascript/ternary-operator" class="" data-slug="ternary-operator">Ternary Operator</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter open" data-chapter="control-flow">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">V.</span>Control Flow</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/if" class="" data-slug="if">if</a></li><li><a href="/javascript/else" class="" data-slug="else">else</a></li><li><a href="/javascript/else-if" class="" data-slug="else-if">else if</a></li><li><a href="/javascript/switch" class="" data-slug="switch">switch</a></li><li><a href="/javascript/for" class="active" data-slug="for">for</a></li><li><a href="/javascript/while" class="" data-slug="while">while</a></li><li><a href="/javascript/do-while" class="" data-slug="do-while">do while</a></li><li><a href="/javascript/break" class="" data-slug="break">break</a></li><li><a href="/javascript/continue" class="" data-slug="continue">continue</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="functions">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">VI.</span>Functions</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/what-is-a-function" class="" data-slug="what-is-a-function">What is a Function?</a></li><li><a href="/javascript/function-declaration" class="" data-slug="function-declaration">Function Declaration</a></li><li><a href="/javascript/function-expression" class="" data-slug="function-expression">Function Expression</a></li><li><a href="/javascript/calling-functions" class="" data-slug="calling-functions">Calling Functions</a></li><li><a href="/javascript/parameters" class="" data-slug="parameters">Parameters</a></li><li><a href="/javascript/arguments" class="" data-slug="arguments">Arguments</a></li><li><a href="/javascript/return-values" class="" data-slug="return-values">Return Values</a></li><li><a href="/javascript/default-parameters" class="" data-slug="default-parameters">Default Parameters</a></li><li><a href="/javascript/rest-parameters" class="" data-slug="rest-parameters">Rest Parameters</a></li><li><a href="/javascript/arrow-functions" class="" data-slug="arrow-functions">Arrow Functions</a></li><li><a href="/javascript/anonymous-functions" class="" data-slug="anonymous-functions">Anonymous Functions</a></li><li><a href="/javascript/callback-functions" class="" data-slug="callback-functions">Callback Functions</a></li><li><a href="/javascript/higher-order-functions" class="" data-slug="higher-order-functions">Higher-Order Functions</a></li><li><a href="/javascript/pure-functions" class="" data-slug="pure-functions">Pure Functions</a></li><li><a href="/javascript/recursion" class="" data-slug="recursion">Recursion</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="objects">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">VII.</span>Objects</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/what-is-an-object" class="" data-slug="what-is-an-object">What is an Object?</a></li><li><a href="/javascript/properties" class="" data-slug="properties">Properties</a></li><li><a href="/javascript/methods" class="" data-slug="methods">Methods</a></li><li><a href="/javascript/object-references" class="" data-slug="object-references">Object References</a></li><li><a href="/javascript/object-destructuring" class="" data-slug="object-destructuring">Object Destructuring</a></li><li><a href="/javascript/spread-syntax" class="" data-slug="spread-syntax">Spread Syntax</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="arrays">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">VIII.</span>Arrays</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/arrays-overview" class="" data-slug="arrays-overview">Arrays</a></li><li><a href="/javascript/array-indexes" class="" data-slug="array-indexes">Array Indexes</a></li><li><a href="/javascript/array-methods" class="" data-slug="array-methods">Array Methods</a></li><li><a href="/javascript/map" class="" data-slug="map">map</a></li><li><a href="/javascript/filter" class="" data-slug="filter">filter</a></li><li><a href="/javascript/reduce" class="" data-slug="reduce">reduce</a></li><li><a href="/javascript/foreach" class="" data-slug="foreach">forEach</a></li><li><a href="/javascript/array-destructuring" class="" data-slug="array-destructuring">Array Destructuring</a></li><li><a href="/javascript/reference-vs-value" class="" data-slug="reference-vs-value">Reference vs Value</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="scope">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">IX.</span>Scope</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/what-is-scope" class="" data-slug="what-is-scope">What is Scope?</a></li><li><a href="/javascript/global-scope" class="" data-slug="global-scope">Global Scope</a></li><li><a href="/javascript/function-scope" class="" data-slug="function-scope">Function Scope</a></li><li><a href="/javascript/block-scope" class="" data-slug="block-scope">Block Scope</a></li><li><a href="/javascript/lexical-scope" class="" data-slug="lexical-scope">Lexical Scope</a></li><li><a href="/javascript/scope-chain" class="" data-slug="scope-chain">Scope Chain</a></li><li><a href="/javascript/lexical-environment" class="" data-slug="lexical-environment">Lexical Environment</a></li><li><a href="/javascript/hoisting" class="" data-slug="hoisting">Hoisting</a></li><li><a href="/javascript/temporal-dead-zone" class="" data-slug="temporal-dead-zone">Temporal Dead Zone</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="closures-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">X.</span>Closures</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/closures" class="" data-slug="closures">Closures</a></li><li><a href="/javascript/how-closures-remember-variables" class="" data-slug="how-closures-remember-variables">How Closures Remember Variables</a></li><li><a href="/javascript/practical-uses-of-closures" class="" data-slug="practical-uses-of-closures">Practical Uses of Closures</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="javascript-runtime-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XI.</span>The JavaScript Runtime</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/what-happens-when-js-runs" class="" data-slug="what-happens-when-js-runs">What Happens When JavaScript Runs?</a></li><li><a href="/javascript/javascript-runtime" class="" data-slug="javascript-runtime">JavaScript Runtime</a></li><li><a href="/javascript/javascript-engine" class="" data-slug="javascript-engine">JavaScript Engine</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="execution-context-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XII.</span>Execution Context</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/execution-context" class="" data-slug="execution-context">Execution Context</a></li><li><a href="/javascript/global-execution-context" class="" data-slug="global-execution-context">Global Execution Context</a></li><li><a href="/javascript/function-execution-context" class="" data-slug="function-execution-context">Function Execution Context</a></li><li><a href="/javascript/creation-phase" class="" data-slug="creation-phase">Creation Phase</a></li><li><a href="/javascript/execution-phase" class="" data-slug="execution-phase">Execution Phase</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="call-stack-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XIII.</span>Call Stack</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/call-stack" class="" data-slug="call-stack">Call Stack</a></li><li><a href="/javascript/stack-overflow" class="" data-slug="stack-overflow">Stack Overflow</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="heap-memory-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XIV.</span>Heap & Memory</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/heap" class="" data-slug="heap">Heap</a></li><li><a href="/javascript/memory" class="" data-slug="memory">Memory</a></li><li><a href="/javascript/garbage-collection" class="" data-slug="garbage-collection">Garbage Collection</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="event-loop-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XV.</span>The Event Loop</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/event-loop" class="" data-slug="event-loop">Event Loop</a></li><li><a href="/javascript/how-the-event-loop-works" class="" data-slug="how-the-event-loop-works">How the Event Loop Works</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="async-javascript-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XVI.</span>Asynchronous JavaScript</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/synchronous-javascript" class="" data-slug="synchronous-javascript">Synchronous JavaScript</a></li><li><a href="/javascript/asynchronous-javascript" class="" data-slug="asynchronous-javascript">Asynchronous JavaScript</a></li><li><a href="/javascript/blocking-vs-non-blocking" class="" data-slug="blocking-vs-non-blocking">Blocking vs Non-Blocking</a></li><li><a href="/javascript/web-apis" class="" data-slug="web-apis">Web APIs</a></li><li><a href="/javascript/callbacks" class="" data-slug="callbacks">Callbacks</a></li><li><a href="/javascript/callback-queue" class="" data-slug="callback-queue">Callback Queue</a></li><li><a href="/javascript/microtask-queue" class="" data-slug="microtask-queue">Microtask Queue</a></li><li><a href="/javascript/macrotask-queue" class="" data-slug="macrotask-queue">Macrotask Queue</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="promises-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XVII.</span>Promises</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/promises" class="" data-slug="promises">Promises</a></li><li><a href="/javascript/promise-states" class="" data-slug="promise-states">Promise States</a></li><li><a href="/javascript/promise-chaining" class="" data-slug="promise-chaining">Promise Chaining</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="async-await-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XVIII.</span>Async / Await</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/async" class="" data-slug="async">async</a></li><li><a href="/javascript/await" class="" data-slug="await">await</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="prototypes-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XIX.</span>Prototypes</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/prototype" class="" data-slug="prototype">Prototype</a></li><li><a href="/javascript/prototype-chain" class="" data-slug="prototype-chain">Prototype Chain</a></li><li><a href="/javascript/inheritance" class="" data-slug="inheritance">Inheritance</a></li><li><a href="/javascript/constructor-functions" class="" data-slug="constructor-functions">Constructor Functions</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="classes-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XX.</span>Classes</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/classes" class="" data-slug="classes">Classes</a></li><li><a href="/javascript/class-methods" class="" data-slug="class-methods">Class Methods</a></li><li><a href="/javascript/extends" class="" data-slug="extends">extends</a></li><li><a href="/javascript/super" class="" data-slug="super">super</a></li><li><a href="/javascript/private-fields" class="" data-slug="private-fields">Private Fields</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="this-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XXI.</span>The `this` Keyword</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/this" class="" data-slug="this">What is `this`?</a></li><li><a href="/javascript/this-global-context" class="" data-slug="this-global-context">Global Context</a></li><li><a href="/javascript/this-object-method" class="" data-slug="this-object-method">Object Method</a></li><li><a href="/javascript/this-constructor" class="" data-slug="this-constructor">Constructor</a></li><li><a href="/javascript/explicit-binding" class="" data-slug="explicit-binding">Explicit Binding</a></li><li><a href="/javascript/call" class="" data-slug="call">call</a></li><li><a href="/javascript/apply" class="" data-slug="apply">apply</a></li><li><a href="/javascript/bind" class="" data-slug="bind">bind</a></li><li><a href="/javascript/arrow-functions-and-this" class="" data-slug="arrow-functions-and-this">Arrow Functions and `this`</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="modules-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XXII.</span>Modules</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/modules" class="" data-slug="modules">Modules</a></li><li><a href="/javascript/import" class="" data-slug="import">import</a></li><li><a href="/javascript/export" class="" data-slug="export">export</a></li><li><a href="/javascript/es-modules" class="" data-slug="es-modules">ES Modules</a></li><li><a href="/javascript/commonjs" class="" data-slug="commonjs">CommonJS</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="error-handling-chapter">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XXIII.</span>Error Handling</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/strict-mode" class="" data-slug="strict-mode">Strict Mode</a></li><li><a href="/javascript/error-handling" class="" data-slug="error-handling">Error Handling</a></li><li><a href="/javascript/try" class="" data-slug="try">try</a></li><li><a href="/javascript/catch" class="" data-slug="catch">catch</a></li><li><a href="/javascript/finally" class="" data-slug="finally">finally</a></li><li><a href="/javascript/custom-errors" class="" data-slug="custom-errors">Custom Errors</a></li></ul>
+      </div>
+    
+      <div class="toc-chapter " data-chapter="advanced-concepts">
+        <button class="toc-chapter-btn" type="button">
+          <span><span class="toc-chapter-num">XXIV.</span>Advanced Concepts</span>
+          <span class="toc-caret">&#9656;</span>
+        </button>
+        <ul class="toc-topics"><li><a href="/javascript/iterators" class="" data-slug="iterators">Iterators</a></li><li><a href="/javascript/generators" class="" data-slug="generators">Generators</a></li><li><a href="/javascript/symbols" class="" data-slug="symbols">Symbols</a></li><li><a href="/javascript/weakmap" class="" data-slug="weakmap">WeakMap</a></li><li><a href="/javascript/weakset" class="" data-slug="weakset">WeakSet</a></li><li><a href="/javascript/event-delegation" class="" data-slug="event-delegation">Event Delegation</a></li><li><a href="/javascript/debouncing" class="" data-slug="debouncing">Debouncing</a></li><li><a href="/javascript/throttling" class="" data-slug="throttling">Throttling</a></li></ul>
+      </div>
+    
+    </nav>
+  
+      <main class="content-col">
+    <div class="article-wrap">
+      <p class="eyebrow">Chapter V &middot; Control Flow</p>
+      <h1 class="article-title">The for Loop</h1>
+      <p class="article-intro">The for loop repeats a block a set number of times, packing the counter's setup, condition, and update into one line so the whole loop's behavior is visible at a glance.</p>
+      
+        <section class="article-section" id="section-0">
+          <h2><span class="section-num">01</span> What Is the for Loop?</h2>
+          
+          
+          <p>A <code class="code-inline">for</code> loop has three parts inside its parentheses, separated by semicolons: an <em class="term">initialization</em> (runs once, before anything else), a <em class="term">condition</em> (checked before every iteration), and an <em class="term">update</em> (runs after every iteration). It's the standard choice whenever the number of repetitions — or a counter driving them — is known in advance.</p>
+        
+          
+          
+          
+          
+        </section>
+      
+        <section class="article-section" id="section-1">
+          <h2><span class="section-num">02</span> Simple Example</h2>
+          
+          <p>Counting from 0 to 2.</p>
+          
+    <div class="code-block">
+      <div class="code-block-label">for.js</div>
+      <pre><code>for (let i = 0; i &lt; 3; i++) {\n  console.log("Iteration:", i);\n}\n// 0, 1, 2</code></pre>
+    </div>
+  
+          <p>i is created once, checked before each pass, and incremented after each pass — the loop stops the moment i reaches 3, since 3 < 3 is false.</p>
+          
+          
+        </section>
+      
+        <section class="article-section" id="section-2">
+          <h2><span class="section-num">03</span> How It Works</h2>
+          
+          <p>Each of the three clauses runs at a specific, fixed moment: initialization exactly once at the very start, the condition before every single iteration including the first, and the update after every iteration's body finishes but before the condition is checked again.</p>
+          
+          
+          
+    <div class="diagram-container">
+      
+          <svg role="img" aria-label="Initialization runs once; condition and update repeat every cycle until the condition fails." viewBox="0 0 640 190" xmlns="http://www.w3.org/2000/svg" width="100%">
+            <rect x="20" y="70" width="120" height="50" rx="2" fill="#F7FAFC" stroke="#315F86" stroke-width="1.3"/>
+            <text x="80" y="99" text-anchor="middle" font-size="11.5" fill="#20262D" font-family="'JetBrains Mono',monospace">let i = 0</text>
+            <polygon points="230,55 320,95 230,135 140,95" fill="none" stroke="#315F86" stroke-width="1.3"/>
+            <text x="230" y="99" text-anchor="middle" font-size="11" fill="#20262D" font-family="'JetBrains Mono',monospace">i &lt; 3?</text>
+            <rect x="400" y="20" width="130" height="46" rx="2" fill="none" stroke="#315F86" stroke-width="1.3"/>
+            <text x="465" y="47" text-anchor="middle" font-size="11.5" fill="#20262D" font-family="'JetBrains Mono',monospace">Run body</text>
+            <rect x="400" y="120" width="130" height="46" rx="2" fill="#F7FAFC" stroke="#315F86" stroke-width="1.3"/>
+            <text x="465" y="147" text-anchor="middle" font-size="11.5" fill="#20262D" font-family="'JetBrains Mono',monospace">i++</text>
+            <rect x="560" y="150" width="60" height="30" rx="2" fill="none" stroke="#8FA6B8" stroke-width="1.3"/>
+            <text x="590" y="170" text-anchor="middle" font-size="10.5" fill="#20262D" font-family="'JetBrains Mono',monospace">exit</text>
+            <defs><marker id="forarr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#315F86"/></marker></defs>
+            <line x1="140" y1="95" x2="225" y2="95" stroke="#315F86" stroke-width="1.3" marker-end="url(#forarr)"/>
+            <line x1="310" y1="80" x2="398" y2="45" stroke="#315F86" stroke-width="1.3" marker-end="url(#forarr)"/>
+            <text x="330" y="55" font-size="10" fill="#6B6D69">yes</text>
+            <line x1="465" y1="66" x2="465" y2="118" stroke="#315F86" stroke-width="1.3" marker-end="url(#forarr)"/>
+            <path d="M400,143 C280,143 280,95 228,95" fill="none" stroke="#315F86" stroke-width="1.3" marker-end="url(#forarr)"/>
+            <line x1="315" y1="112" x2="558" y2="163" stroke="#8FA6B8" stroke-width="1.3" marker-end="url(#forarr)"/>
+            <text x="330" y="130" font-size="10" fill="#6B6D69">no</text>
+          </svg>
+        
+    </div>
+    <p class="diagram-caption">Initialization runs once; condition and update repeat every cycle until the condition fails.</p>
+  
+          
+        </section>
+      
+        <section class="article-section" id="section-3">
+          <h2><span class="section-num">04</span> Step-by-Step</h2>
+          
+          
+          
+          
+          
+          <ol class="step-list"><li class="step-item"><p>Run the initialization expression once (e.g. let i = 0).</p></li><li class="step-item"><p>Check the condition. If false, exit the loop immediately without running the body.</p></li><li class="step-item"><p>If true, run the loop body.</p></li><li class="step-item"><p>Run the update expression (e.g. i++).</p></li><li class="step-item"><p>Return to step 2 and repeat.</p></li></ol>
+        </section>
+      
+        <section class="article-section" id="section-4">
+          <h2><span class="section-num">05</span> Practical Example</h2>
+          
+          <p>Looping over an array by index.</p>
+          
+    <div class="code-block">
+      <div class="code-block-label">array-for.js</div>
+      <pre><code>const fruits = ["apple", "banana", "cherry"];\n\nfor (let i = 0; i &lt; fruits.length; i++) {\n  console.log(fruits[i]);\n}</code></pre>
+    </div>
+  
+          
+          
+          
+        </section>
+      
+        <section class="article-section" id="section-5">
+          <h2><span class="section-num">06</span> Common Mistakes & Edge Cases</h2>
+          
+          
+          <p class="warning"><strong>Warning:</strong> Using var instead of let for the counter used to be standard, but it means every closure created inside the loop shares one variable — a classic source of bugs. let creates a fresh binding per iteration, which is why it's the modern default.</p>
+          <p><strong>Off-by-one errors.</strong> i <= fruits.length would read one index past the array's end, returning undefined; the standard, correct bound is i < fruits.length.</p>
+          <p>For simply iterating values (not indexes), a <a href="#foreach">for...of</a> loop or array method is usually more readable than a classic for.</p>
+        
+          
+          
+          
+          
+        </section>
+      
+        <section class="article-section" id="section-6">
+          <h2><span class="section-num">07</span> Mental Model</h2>
+          <p class="mental-model">"Running laps: set the counter, check if laps remain, run one, then count it and check again."</p>
+          
+          
+          
+          
+          
+        </section>
+      
+        <section class="article-section" id="section-7">
+          <h2><span class="section-num">08</span> Interview Questions</h2>
+          
+          
+          <div class="interview-block">
+            <div class="interview-qa">
+              <p class="interview-q"><strong>Q: What happens if the initialization uses var vs let?</strong></p>
+              <p class="interview-a">With var, one variable is shared across all iterations; with let, a brand-new binding is created for each iteration — this matters most when closures capture the loop variable, e.g. inside setTimeout.</p>
+            </div>
+            <div class="interview-qa">
+              <p class="interview-q"><strong>Q: Can any of the three clauses be omitted?</strong></p>
+              <p class="interview-a">Yes — for (;;) is a valid infinite loop with all three clauses empty, as long as something inside the body eventually breaks out of it.</p>
+            </div>
+          </div>
+        
+          
+          
+          
+          
+        </section>
+      
+      <section class="article-section">
+        
+    <div class="key-takeaway">
+      <p class="key-takeaway-title">Key Takeaway</p>
+      <p>A for loop bundles setup, condition, and update into one line, running the condition check before every iteration — reach for it whenever a counter or a known number of repetitions drives the loop.</p>
+    </div>
+  
+      </section>
+      <section class="article-section">
+        <h2>Related Concepts</h2>
+        <ul class="related-concepts"><li><a href="/javascript/while">while</a></li><li><a href="/javascript/do-while">do while</a></li><li><a href="/javascript/break">break</a></li><li><a href="/javascript/continue">continue</a></li></ul>
+      </section>
+      <nav class="prev-next-nav" aria-label="Chapter navigation"><a class="nav-link prev" href="/javascript/switch"><span class="nav-dir">&larr; Previous</span><span class="nav-title">switch</span></a><a class="nav-link next" href="/javascript/while"><span class="nav-dir">Next &rarr;</span><span class="nav-title">while</span></a></nav>
+    </div>
+  </main>
+      
+    <aside class="page-toc" aria-label="On this page">
+      <p class="page-toc-label">ON THIS PAGE</p>
+      <ol><li><a href="#section-0">What Is the for Loop?</a></li><li><a href="#section-1">Simple Example</a></li><li><a href="#section-2">How It Works</a></li><li><a href="#section-3">Step-by-Step</a></li><li><a href="#section-4">Practical Example</a></li><li><a href="#section-5">Common Mistakes & Edge Cases</a></li><li><a href="#section-6">Mental Model</a></li><li><a href="#section-7">Interview Questions</a></li></ol>
+    </aside>
+  
+    </div>
+  </div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

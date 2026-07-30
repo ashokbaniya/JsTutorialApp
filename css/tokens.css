@@ -1,0 +1,141 @@
+/* ============================================================
+   THE JAVASCRIPT BOOK — Design Tokens
+   A classic technical book, redesigned for the web.
+   ============================================================ */
+
+:root, :root[data-theme="light"] {
+  /* -- Palette (Light Mode / Default) -- */
+  --paper: #F7F4EC;
+  --paper-raised: #FBF9F4;
+  --ink: #20262D;
+  --ink-muted: #6B6D69;
+  --ink-faint: #9A9C96;
+  --blue: #234F78;
+  --blue-soft: #3C6690;
+  --border: #D8D4CB;
+  --border-strong: #C7C1B2;
+  --code-bg: #F0EDE5;
+  --diagram-bg: #FFFFFF;
+  --diagram-border: #C9D1D8;
+  --diagram-ink: #315F86;
+  --diagram-text: #20262D;
+  --highlight: #EFE6D2;
+}
+
+:root[data-theme="dark"] {
+  /* -- Palette (Dark Mode) -- */
+  --paper: #12161A;
+  --paper-raised: #1A2026;
+  --ink: #E6EDF2;
+  --ink-muted: #9AA0A6;
+  --ink-faint: #6E7681;
+  --blue: #58A6FF;
+  --blue-soft: #388BFd;
+  --border: #30363D;
+  --border-strong: #484F58;
+  --code-bg: #1F242C;
+  --diagram-bg: #1A2026;
+  --diagram-border: #30363D;
+  --diagram-ink: #58A6FF;
+  --diagram-text: #E6EDF2;
+  --highlight: #30363D;
+}
+
+:root {
+  /* -- Type -- */
+  --font-serif: 'Source Serif 4', 'Libre Baskerville', Georgia, serif;
+  --font-display: 'Cormorant Garamond', 'Libre Baskerville', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* -- Scale -- */
+  --step--1: 0.875rem;
+  --step-0: 1rem;
+  --step-1: 1.2rem;
+  --step-2: 1.5rem;
+  --step-3: 1.95rem;
+  --step-4: 2.6rem;
+  --step-5: 3.4rem;
+
+  /* -- Layout -- */
+  --header-h: 68px;
+  --sidebar-w: 280px;
+  --toc-w: 220px;
+  --content-max: 720px;
+  --radius: 2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--font-serif);
+  font-size: var(--step-0);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 3px;
+}
+
+::selection {
+  background: var(--highlight);
+}
+
+/* Visible keyboard focus, always */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+code, pre, kbd {
+  font-family: var(--font-mono);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

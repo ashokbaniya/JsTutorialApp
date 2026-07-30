@@ -1,0 +1,213 @@
+/* ============================================================
+   LAYOUT — three-part documentation grid
+   ============================================================ */
+
+.book-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) minmax(0, 1fr) var(--toc-w);
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.book-layout.no-toc {
+  grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  position: sticky;
+  top: var(--header-h);
+  height: calc(100vh - var(--header-h));
+  overflow-y: auto;
+  padding: 2rem 1.25rem 3rem 1.5rem;
+  border-right: 1px solid var(--border);
+}
+
+.sidebar-title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+  margin: 0 0 1rem;
+}
+
+.toc-chapter {
+  border-bottom: 1px solid var(--border);
+}
+
+.toc-chapter:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.toc-chapter-btn {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.65rem 0.15rem;
+  font-family: var(--font-serif);
+  font-size: 0.86rem;
+  color: var(--ink);
+}
+
+.toc-chapter-btn:hover {
+  color: var(--blue);
+}
+
+.toc-chapter-num {
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  margin-right: 0.5rem;
+}
+
+.toc-caret {
+  color: var(--ink-faint);
+  font-size: 0.65rem;
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+.toc-chapter.open .toc-caret {
+  transform: rotate(90deg);
+}
+
+.toc-topics {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0.6rem 0.4rem;
+  display: none;
+}
+
+.toc-chapter.open .toc-topics {
+  display: block;
+}
+
+.toc-topics li {
+  border-left: 1px solid var(--border);
+}
+
+.toc-topics a {
+  display: block;
+  padding: 0.32rem 0 0.32rem 0.85rem;
+  font-size: 0.83rem;
+  color: var(--ink-muted);
+  border-left: 2px solid transparent;
+  margin-left: -1px;
+}
+
+.toc-topics a:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.toc-topics a.active {
+  color: var(--blue);
+  border-left-color: var(--blue);
+  font-weight: 600;
+}
+
+/* ---------- Main content column ---------- */
+.content-col {
+  min-width: 0;
+  padding: 0 3rem;
+}
+
+.content-col .article-wrap,
+.content-col .home-wrap {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 3rem 0 6rem;
+}
+
+/* ---------- Right "on this page" nav ---------- */
+.page-toc {
+  position: sticky;
+  top: var(--header-h);
+  height: calc(100vh - var(--header-h));
+  overflow-y: auto;
+  padding: 3rem 1.5rem 3rem 1rem;
+  font-size: 0.8rem;
+}
+
+.page-toc-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+  margin-bottom: 0.8rem;
+}
+
+.page-toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid var(--border);
+}
+
+.page-toc li a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  color: var(--ink-muted);
+  border-left: 2px solid transparent;
+  margin-left: -1px;
+}
+
+.page-toc li a:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+/* ---------- Mobile sidebar drawer ---------- */
+.sidebar-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(32, 38, 45, 0.35);
+  z-index: 55;
+}
+
+@media (max-width: 1150px) {
+  .book-layout,
+  .book-layout.no-toc {
+    grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+  }
+  .page-toc { display: none; }
+}
+
+@media (max-width: 900px) {
+  .book-layout,
+  .book-layout.no-toc {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: var(--header-h);
+    width: 82vw;
+    max-width: 320px;
+    background: var(--paper);
+    z-index: 56;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+    box-shadow: 6px 0 24px rgba(0,0,0,0.08);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  body.sidebar-open .sidebar-backdrop {
+    display: block;
+  }
+  .content-col {
+    padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .content-col { padding: 0 1rem; }
+}
